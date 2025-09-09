@@ -1,0 +1,68 @@
+.error-404-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.error-404-section h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff4c4c;
+}
+
+.error-404-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #0056b3;
+}
+
+.error-image {
+  margin-top: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+body.dark-mode .error-404-section{
+    background: #1B1E29;
+}
+
+body.dark-mode .error-404-section h1{
+    color: #E0E0E0;
+}
+
+body.dark-mode .error-404-section p{
+    color: #E0E0E0;
+}
+
+body.dark-mode .error-404-section a{
+    background: rgb(0 0 0 / 85%);
+    color: #ffffff;
+
+}
+
+body.dark-mode .error-404-section a:hover{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.35),
+    inset 0 -2px 8px rgba(255, 255, 255, 0.25);
+    color: #66aaff;
+}

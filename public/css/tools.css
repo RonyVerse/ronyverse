@@ -1,0 +1,147 @@
+.tbg {
+  backdrop-filter: blur(12px);
+  /* -webkit-backdrop-filter: blur(12px); */
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  background: #cbcbcb;
+}
+
+.tools {
+  margin-bottom: 60px;
+}
+
+.tools h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: -2px 0 30px;
+  color: var(--color-text, #fff);
+  letter-spacing: 0.5px;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 20px;
+  background: #313038;
+  padding: 30px;
+  border-radius: 1%;
+}
+
+.tool-card {
+  background: #0C015B;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  /* padding: 10px; */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  align-items: center;
+  justify-content: center;
+}
+.tool-card img {
+    width: 72%;
+    border-radius: 50%;
+    transform: translate(18px, 20px);
+}
+
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3),
+              0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.tool-card h3 {
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient( 45deg , #02d9d5, #ca00ff);
+    text-align: center;
+}
+
+.tool-card p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 34px 0 20px;
+    padding: 0 61px;
+    opacity: 0.95;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tool-card a {
+  text-decoration: none;
+}
+
+.tool-card button {
+    background: rgba(255,255,255,0.85);
+    color: #1e1e2f;
+    border: none;
+    padding: 6px 69px;
+    margin: 10px 0 37px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tool-card button:hover {
+  background: rgba(255,255,255,1);
+  transform: translateY(-2px);
+} */
+
+/* Dark Mode Tweaks */
+
+
+
+ body.dark-mode .tbg {
+  background: rgba(20, 20, 35, 0.4);
+}
+
+body.dark-mode .tool-card {
+  background: rgba(40, 40, 60, 0.4);
+}
+
+body.dark-mode .tool-card button {
+    background: rgb(0 0 0 / 85%);
+    color: #ffffff;
+}
+
+body.dark-mode .tbg {
+  background: rgba(40, 40, 60, 0.4);
+}
+
+body.dark-mode .tool-card h3{
+  /* background: rgba(40, 40, 60, 0.4); */
+  background: linear-gradient(45deg, #2b2929, #231e1e);
+}
+
+body.dark-mode header{
+  /* background: rgba(20, 20, 35, 0.4); */
+  background-color: #2c2a33;
+}
+
+ body.dark-mode footer{
+  /* background: rgba(20, 20, 35, 0.4); */
+  background-color: #2c2a33;
+}
+
+
+
+
+
+
+
+
+
+

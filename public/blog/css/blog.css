@@ -1,0 +1,124 @@
+/* CSS - add to your stylesheet */
+
+/* sensible reset for layout */
+* { box-sizing: border-box;}
+
+/* container: central wrapper used site-wide */
+.container {
+  max-width: 1200px;    /* adjust if you want wider/narrower */
+  margin: 0 auto;
+  padding: 0 20px;      /* horizontal padding for small screens */
+}
+
+/* section title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0 20px;
+  color: var(--color-text, #07103a);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* blog grid inside the container */
+.blog-list {
+    display: grid;
+    grid-template-columns: 304px 304px 304px 304px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* blog card */
+.blog-card {
+  background: rgba(255,255,255,0.06);       /* glassy base */
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 20px;
+  color: var(--color-text, #fff);
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: 0 6px 18px rgba(6,10,30,0.25);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+/* hover effect */
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 40px rgba(6,10,30,0.35);
+  border-color: rgba(0,200,255,0.12);
+}
+
+.blog-card img{
+  width: 100%;
+}
+
+/* title/link */
+.blog-card h2 {
+  font-size: 1.375rem;
+  margin: 0 0 10px;
+}
+
+.blog-card h2 a {
+  text-decoration: none;
+  color: #4e4e4e;
+  transition: color 0.2s ease;
+}
+
+.blog-card h2 a:hover {
+  color: #007BFF;
+}
+
+/* excerpt */
+.blog-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #7e7777;
+    margin: 0px 0 10px;
+}
+
+.blog-card .meta {
+    font-size: 0.82em;
+    color: #948e8e;
+    margin-bottom: 8px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* dark mode */
+body.dark-mode .blog-list .blog-card .button a{
+  background: rgb(0 0 0 / 85%);
+  color: #ffffff;
+}
+
+body.dark-mode .blog-list .blog-card .button a:hover{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.35),
+    inset 0 -2px 8px rgba(255, 255, 255, 0.25);
+    color: #66aaff;
+}
+
+body.dark-mode .blog-card h2 a {
+  color: #ffffff;
+}
+
+body.dark-mode .blog-card h2 a:hover{
+    color: #66aaff;
+}
+
+/* small screens tweak */
+@media (max-width: 480px) {
+  .section-title { font-size: 1.6rem; margin-top: 18px; }
+  .container { padding: 0 14px; }
+  .blog-card { padding: 16px; border-radius: 12px; }
+}
